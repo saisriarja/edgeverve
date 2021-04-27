@@ -386,6 +386,25 @@ footer .footer-logo img{
 .footer-logo-container{
   border-bottom: solid 0.2px #2a434d;
 }
+.bannerr-carousell .owl-dots{
+  position: absolute;
+    bottom: 0;
+    left: 38%;
+}
+footer .span-h {
+  font-size: 11px;
+}
+footer .footer-text{
+  color: #6d7e84;
+  font-size: 12px;
+  word-spacing: 2px;
+}
+.icons a{
+  color: #6d7e84;
+  font-size: 20px;
+  margin-right: 18px;
+}
+
 @media (min-width:992px) {
   .text-on-image {
     position   : absolute;
@@ -427,5 +446,10 @@ footer .footer-logo img{
   }
   .getintouch {
     margin-left: 100px;
+  }
+  .bannerr-carousell .owl-dots{
+    position: absolute;
+      bottom: 0;
+      left: 50%;
   }
 }
