@@ -176,7 +176,7 @@ ul.navbar-nav li.searchbar i {
 
 .four-boxs-content {
   color        : #556d77;
-  margin-right : 16px;
+  /* margin-right : 16px; */
   font-size    : 14px;
   border-bottom: solid 0.3px #d0d1d1;
 }
@@ -420,26 +420,26 @@ footer .footer-text{
     font-weight: 700;
   }
 
-  .four-box-col-24 {
+  /* .four-box-col-24 {
     width     : 23%;
     max-width : 23%;
     height    : 364px;
     max-height: 364px;
     margin-bottom: 0px;
-  }
+  } */
   .ai-four-img img {
     border-radius: 7px;
-    width        : 242px;
-    max-width    : 242px;
+    /* width        : 242px;
+    max-width    : 242px; */
     height       : 127px;
     max-height   : 127px;
   }
   .ai-col {
     padding      : 7px;
-    width        : 24%;
+    /* width        : 24%;
     max-width    : 24%;
     height       : 300px;
-    max-height   : 300px;
+    max-height   : 300px; */
     border       : 2px solid #eae9e8;
     border-radius: 8px;
     background   : white;
