@@ -19,7 +19,7 @@ body {
   color: #007cc3 !important;
 }
 
-ul.navbar-nav li.searchbar a {
+/* ul.navbar-nav li.searchbar a {
   padding      : 0;
   width        : 30px;
   height       : 30px;
@@ -27,13 +27,13 @@ ul.navbar-nav li.searchbar a {
   text-align   : center;
   border-radius: 30px;
   border       : solid 1px #007cc3;
-}
+} */
 
-ul.navbar-nav li.searchbar i {
+/* ul.navbar-nav li.searchbar i {
   margin-top : 6px;
   position   : relative;
   margin-left: -1px;
-}
+} */
 
 
 
@@ -51,13 +51,13 @@ ul.navbar-nav li.searchbar i {
   text-decoration: none;
 }
 
-.navbar-nav .nav-item:not(.searchbar) .nav-link,
+.navbar-nav  .nav-link,
 .digital-section .digital-four a {
   border       : solid 3px transparent;
   border-radius: 4px;
 }
 
-.navbar-nav .nav-item:not(.searchbar) .nav-link:hover,
+.navbar-nav  .nav-link:hover,
 .digital-section .digital-four a:hover {
 
   border-bottom: solid 3px #fe4902;
@@ -597,7 +597,9 @@ footer .footer-text {
 .accounts-section {
   background: #f7f7f7;
 }
-
+.account-sub-col h6{
+  color: #0e5b9e;
+}
 .address-section {
   background           : url(../images/visual-page-dice-1.jpg) no-repeat top;
   background-attachment: fixed;
@@ -827,7 +829,7 @@ p.identity {
 .modal-header, .modal-footer{
   border: none;
 }
-.modal-section .modal-dialog{
+ .modal-dialog{
   max-width: 70% !important;
 }
 .modal-dialog-centered .modal-content{
@@ -838,4 +840,133 @@ p.identity {
 }
 .border-b{
   border-bottom: 3px solid chocolate;
+}
+.bar-block {
+  width: 105px;
+  height: 300px;
+  /* overflow: hidden; */
+  transition: all 1s ease-in-out;
+}
+
+.bar {
+  width: 90px;
+  height: 100%;
+  float: left;
+  border: solid 3px #fe4902;
+}
+
+.bar h4 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: lightslategrey;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.detail-box {
+  float: left;
+  width: 5px;
+  overflow: hidden;
+  height: 100%;
+  opacity: 0;
+  background: #efefef;
+  transition: all 1s ease-in-out;
+}
+
+.bar-block:hover {
+  width: 800px;
+  transition: all 1s ease-in-out;
+}
+
+.bar-block:hover .detail-box {
+  width: 700px;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.feature-services-section {
+  background-size: cover;
+  background: url(../images/bank.jpg) no-repeat ;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+}
+
+.feature-services-section:after {
+  content: '';
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+
+
+
+.searchbar .header-search-wrapper {
+	float: right;
+	position: relative;
+}
+.search-main {
+	display: block;
+	line-height: 40px;
+	padding: 0 14px;
+	cursor: pointer;
+	color: #fff;
+	background: #d33;
+}
+.searchbar .header-search-wrapper .search-form-main {
+    background: #fff none repeat scroll 0 0;
+    -webkit-box-shadow: 1px 1px 7px rgba(0,0,0,.15);
+    box-shadow: 1px 1px 7px rgba(0,0,0,.15);
+    border-top: 2px solid #408c40;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 124%;
+    width: 300px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+}
+.search-form-main.active-search {
+    opacity: 1;
+    visibility: visible;
+}
+.searchbar .header-search-wrapper .search-form-main {
+    border-top-color: #d33;
+}
+.searchbar .header-search-wrapper .search-form-main:before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #408c40;
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: -10px;
+}
+.searchbar .header-search-wrapper .search-form-main:before {
+    border-bottom-color: #d33;
+}
+.searchbar .header-search-wrapper .search-form-main .search-field {
+    border-radius: 0;
+    padding: 4px 10px;
+    width: 75%;
+    float: left;
+}
+.searchbar .header-search-wrapper .search-form-main .search-submit {
+    border: medium none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    float: left;
+    padding: 10px 0 10px;
+    width: 25%;
+    height: 36px;
+    background: #d33;
 }
