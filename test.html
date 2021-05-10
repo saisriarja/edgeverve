@@ -288,8 +288,40 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body ">
-                    
+                <div class="modal-body">
+                    <div class="col-lg-12 d-lg-flex flex-lg-wrap flex-lg-row">
+                        <div class="col-lg-6">
+                            <img src="images/team1.jpg" class="img-fluid br-8 w-100" alt="">
+                        </div>
+                        <div class="col-lg-6 pr-0">
+                            <p class="text-white border-b pt-3 pb-5">Lorem Ipsum is simply
+                                dummy text of the
+                                printing and
+                                typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since
+                                the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to
+                                make a type specimen
+                                book.<br><br> It has survived not only five centuries, but
+                                also the leap into
+                                electronic
+                                typesetting, remaining essentially unchanged.<br><br> It was
+                                popularised in the
+                                1960s
+                                with the release of Letraset sheets containing Lorem Ipsum
+                                passages, and more
+                                recently with desktop publishing software like Aldus
+                                PageMaker including
+                                versions of Lorem Ipsum.
+                            </p>
+                            <p class="text-white text-right pt-3 authorname">
+                                Dennis wilson
+                            </p>
+                            <p class="text-white text-right pt-3 authorposition">
+                                Zookeeper Agency of CA
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -299,6 +331,12 @@
         </div>
     </div>
 <script>
+    $(document).ready(function(){
+        $('.modal-button').on('click', function(){
+            var authorName = $(this).closest('.item').find('.peopl').find('h3').text();
+            $('.authorname').text(authorName);
+        });
+    });
 </script>
 </body>
 
