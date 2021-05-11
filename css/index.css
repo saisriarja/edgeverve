@@ -51,13 +51,13 @@ body {
   text-decoration: none;
 }
 
-.navbar-nav  .nav-link,
+.navbar-nav .nav-link,
 .digital-section .digital-four a {
   border       : solid 3px transparent;
   border-radius: 4px;
 }
 
-.navbar-nav  .nav-link:hover,
+.navbar-nav .nav-link:hover,
 .digital-section .digital-four a:hover {
 
   border-bottom: solid 3px #fe4902;
@@ -597,9 +597,11 @@ footer .footer-text {
 .accounts-section {
   background: #f7f7f7;
 }
-.account-sub-col h6{
+
+.account-sub-col h6 {
   color: #0e5b9e;
 }
+
 .address-section {
   background           : url(../images/visual-page-dice-1.jpg) no-repeat top;
   background-attachment: fixed;
@@ -725,7 +727,7 @@ footer .footer-text {
   justify-content: center;
 }
 
-a.testi-img {
+.testi-img {
   width        : 90px;
   height       : 90px;
   display      : inline-block;
@@ -814,7 +816,7 @@ p.identity {
 }
 
 .modal-button {
-  font-size: 13px;
+  font-size    : 13px;
   width        : 130px;
   height       : 45px;
   background   : white;
@@ -823,150 +825,238 @@ p.identity {
   font-weight  : 600;
   color        : #fe4902;
 }
-.modal-dialog-centered .modal-content{
+
+.modal-dialog-centered .modal-content {
   background: #808080;
 }
-.modal-header, .modal-footer{
+
+.modal-header,
+.modal-footer {
   border: none;
 }
- .modal-dialog{
+
+.modal-dialog {
   max-width: 70% !important;
 }
-.modal-dialog-centered .modal-content{
+
+.modal-dialog-centered .modal-content {
   background: black;
 }
-.modal-footer button{
+
+.modal-footer button {
   background: none;
 }
-.border-b{
+
+.border-b {
   border-bottom: 3px solid chocolate;
 }
+
 .bar-block {
-  width: 105px;
-  height: 300px;
+  width      : 105px;
+  height     : 300px;
   /* overflow: hidden; */
-  transition: all 1s ease-in-out;
+  transition : all 1s ease-in-out;
 }
 
 .bar {
-  width: 90px;
+  width : 90px;
   height: 100%;
-  float: left;
+  float : left;
   border: solid 3px #fe4902;
 }
 
 .bar h4 {
-  writing-mode: vertical-rl;
+  writing-mode    : vertical-rl;
   text-orientation: mixed;
-  color: lightslategrey;
-  font-weight: bold;
-  margin: 0px;
+  color           : lightslategrey;
+  font-weight     : bold;
+  margin          : 0px;
 }
 
 .detail-box {
-  float: left;
-  width: 5px;
-  overflow: hidden;
-  height: 100%;
-  opacity: 0;
+  float     : left;
+  width     : 5px;
+  overflow  : hidden;
+  height    : 100%;
+  opacity   : 0;
   background: #efefef;
   transition: all 1s ease-in-out;
 }
 
 .bar-block:hover {
-  width: 800px;
+  width     : 800px;
   transition: all 1s ease-in-out;
 }
 
 .bar-block:hover .detail-box {
-  width: 700px;
-  opacity: 1;
+  width     : 700px;
+  opacity   : 1;
   transition: all 1s ease-in-out;
 }
 
 .feature-services-section {
-  background-size: cover;
-  background: url(../images/bank.jpg) no-repeat ;
+  background-size    : cover;
+  background         : url(../images/bank.jpg) no-repeat;
   background-position: center;
-  position: relative;
-  background-size: cover;
-  z-index: 1;
+  position           : relative;
+  background-size    : cover;
+  z-index            : 1;
 }
 
 .feature-services-section:after {
-  content: '';
+  content   : '';
   background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: -1;
+  position  : absolute;
+  left      : 0;
+  right     : 0;
+  bottom    : 0;
+  top       : 0;
+  z-index   : -1;
 }
 
 
 
 
-.searchbar .header-search-wrapper {
-	float: right;
-	position: relative;
+.header-search-wrapper {
+  float   : right;
+  position: relative;
 }
+
 .search-main {
-	display: block;
-	line-height: 40px;
-	padding: 0 14px;
-	cursor: pointer;
-	color: #fff;
-	background: #d33;
+  display    : block;
+  line-height: 40px;
+  padding    : 0 14px;
+  cursor     : pointer;
+  color      : #007cc3;
 }
-.searchbar .header-search-wrapper .search-form-main {
-    background: #fff none repeat scroll 0 0;
-    -webkit-box-shadow: 1px 1px 7px rgba(0,0,0,.15);
-    box-shadow: 1px 1px 7px rgba(0,0,0,.15);
-    border-top: 2px solid #408c40;
-    padding: 15px;
-    position: absolute;
-    right: 0;
-    top: 124%;
-    width: 300px;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
+
+.header-search-wrapper .search-form-main {
+  background        : #fff none repeat scroll 0 0;
+  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, .15);
+  box-shadow        : 1px 1px 7px rgba(0, 0, 0, .15);
+  border-top        : 2px solid #408c40;
+  padding           : 15px;
+  position          : absolute;
+  right             : 0;
+  top               : 124%;
+  width             : 300px;
+  z-index           : 9999;
+  opacity           : 0;
+  visibility        : hidden;
 }
+
 .search-form-main.active-search {
-    opacity: 1;
-    visibility: visible;
+  opacity   : 1;
+  visibility: visible;
 }
-.searchbar .header-search-wrapper .search-form-main {
-    border-top-color: #d33;
+
+.header-search-wrapper .search-form-main {
+  border-top-color: #007cc3 !important;
 }
-.searchbar .header-search-wrapper .search-form-main:before {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #408c40;
-    content: "";
-    position: absolute;
-    right: 15px;
-    top: -10px;
+
+.header-search-wrapper .search-form-main:before {
+  border-left  : 10px solid transparent;
+  border-right : 10px solid transparent;
+  border-bottom: 10px solid #408c40;
+  content      : "";
+  position     : absolute;
+  right        : 15px;
+  top          : -10px;
 }
-.searchbar .header-search-wrapper .search-form-main:before {
-    border-bottom-color: #d33;
+
+.header-search-wrapper .search-form-main:before {
+  border-bottom-color: #007cc3 !important;
 }
-.searchbar .header-search-wrapper .search-form-main .search-field {
-    border-radius: 0;
-    padding: 4px 10px;
-    width: 75%;
-    float: left;
+
+.header-search-wrapper .search-form-main .search-field {
+  border-radius: 0;
+  padding      : 4px 10px;
+  width        : 100%;
+  float        : left;
 }
-.searchbar .header-search-wrapper .search-form-main .search-submit {
-    border: medium none;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #fff;
-    float: left;
-    padding: 10px 0 10px;
-    width: 25%;
-    height: 36px;
-    background: #d33;
+
+.header-search-wrapper .search-form-main .search-submit {
+  border            : medium none;
+  border-radius     : 0;
+  -webkit-box-shadow: none;
+  box-shadow        : none;
+  color             : #007cc3;
+  float             : left;
+  padding           : 6px 0 10px;
+  width             : 25%;
+  height            : 36px;
+}
+
+
+.team-section .our-team .content {
+  background      : rgba(0, 0, 0, 0.6);
+  position        : absolute;
+  height          : 100%;
+  width           : 100%;
+  left            : 0;
+  top             : 0;
+  text-align      : center;
+  padding-top     : 45%;
+  transform       : perspective(400px) rotateX(-90deg);
+  transform-origin: center top 0;
+  transition      : all 0.5s ease 0s;
+  opacity         : 0;
+}
+
+.team-section .our-team .content .title {
+  margin     : 0 0 10px;
+  display    : block;
+  font-size  : 25px;
+  font-weight: 600;
+  color      : #fff;
+}
+
+.team-section .our-team .content .post {
+  margin   : 0 0 25px;
+  display  : block;
+  font-size: 18px;
+}
+
+.team-section .our-team .social {
+  margin         : 0;
+  padding        : 0;
+  list-style-type: none;
+}
+
+.team-section .our-team .social li {
+  display: inline-block;
+}
+
+.team-section .our-team .social li a {
+  display            : block;
+  /* color           : #fff; */
+  font-size          : 20px;
+  height             : 40px;
+  width              : 40px;
+  line-height        : 40px;
+  border-radius      : 0;
+  background-color   : var(--primary-color);
+  margin-right       : 5px;
+  transition         : all 0.5s ease 0s;
+  position           : relative;
+  border-radius      : 50%;
+}
+
+.our-team:hover .content,
+.our-team.active .content {
+  opacity  : 1;
+  transform: perspective(400px) rotateX(0deg);
+}
+
+.our-team .social li a:hover,
+.our-team.active .social li a {
+  border-radius  : 50%;
+  text-decoration: none;
+}
+
+.modal-body .testi-des a.testi-img img {
+  display   : inline-block;
+  overflow  : hidden;
+  width: 100% !important;
+  background: var(--bg-color);
 }

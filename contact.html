@@ -56,11 +56,19 @@
                                     Get In Touch
                                 </button></a>
                         </li>
-                        <li class="nav-item searchbar pl-3">
-                            <a class="nav-link" href="#">
-                                <i class="fa fa-search color-blue" aria-hidden="true"></i>
-                            </a>
-                        </li>
+                        <div class="header-search-wrapper">
+                            <span class="search-main">
+                              <i class="fa fa-search"></i>
+                            </span>
+                            <div class="search-form-main clearfix">
+                              <form role="search" method="get" class="search-form" action="sitename.com/">
+                                <label>
+                                  <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                                </label>
+                                <input type="submit" class="search-submit" value="Search">
+                              </form>
+                            </div>
+                          </div>
                     </ul>
                 </div>
             </nav>
@@ -281,106 +289,103 @@
             </div>
         </div>
     </footer>
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <div class="d-lg-flex flex-lg-row flex-lg-wrap col-lg-12">
-                        <div class="col-lg-11 text-center">
-                            <h2 class="modal-title font-weight-bold clr-org" id="exampleModalLongTitle">
-                                Get in touch
-                            </h2>
-                        </div>
-                        <div class="col-lg-1">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="clr-org">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <section class="py-3 py-lg-5 form-section" id="form-section">
-                        <div class="container">
-                            <div class="col-lg-9 mx-auto text-center d-lg-flex flex-lg-row flex-lg-wrap p-0 py-4">
-                                <div class="bg-dark br-8 col-lg-12 p-0 ">
-                                    <div class="contact-icons col-lg-12 d-lg-flex flex-lg-row flex-lg-wrap py-2">
-                                        <div class="col-lg-6 ">
-                                            <span class="clr-org icon-1"><i class="fa fa-circle"></i></span>
-                                            <span class="clr-org icon-2"><i class="fa fa-circle"></i></span>
-                                            <span class="clr-org icon-3"><i class="fa fa-circle"></i></span>
-                                        </div>
-                                        <div class="col-lg-6 text-right">
-                                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 d-lg-flex flex-lg-row flex-lg-wrap p-0 py-5">
-                                        <div class="col-lg-6 pb-4 text-left pl-5">
-                                            <div>
-                                                <h2 class=" clr-org">Contact<br><span class="us">Us</span> </h2>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 text-center mx-auto mt-5 mt-lg-0 pb-5 pb-lg-0">
-                                            <grammarly-extension data-grammarly-shadow-root="true" class="cGcvT"
-                                                style="position: absolute; top: 0px; left: 0px; pointer-events: none;">
-                                            </grammarly-extension>
-
-                                            <form class="contact-form ">
-                                                <div class="form-row">
-                                                    <div class="col-md-12 form-group">
-                                                        <input type="text" class="form-control" name="name"
-                                                            placeholder="Name" required="">
-                                                        <div class="validate"></div>
-                                                    </div>
-                                                    <div class="col-md-12 form-group">
-                                                        <input type="email" class="form-control" name="email"
-                                                            placeholder="E-mail" required="">
-                                                        <div class="validate"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="mobile"
-                                                        placeholder="Mobile Number" required="">
-                                                    <div class="validate"></div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <textarea class="form-control " name="message"
-                                                        placeholder="Your Message" style="height:100px;" required=""
-                                                        spellcheck="false"></textarea>
-                                                    <div class="validate"></div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <div id="responseMessage"></div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="col-md-12 d-lg-flex flex-lg-wrap flex-lg-row pt-2">
-                                            <div class="col-md-6 cn-info text-left ">
-                                                <p>CONTACT INFO : <a href="tel:+91 7995766421" class="">+91
-                                                        7995766421</a></p>
-                                            </div>
-                                            <div class="col-md-6 text-right">
-                                                <span><button
-                                                        class="clr-org border-0 bg-dark font-weight-bold">CANCLE</button></span>
-                                                <span><button
-                                                        class="clr-org border-0 bg-dark font-weight-bold">SEND</button></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="border-0 clr-org font-weight-bold" data-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-secondary clr-org font-weight-bold">Save
-changes</button> -->
-                </div>
-            </div>
+     <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content p-0">
+      <!-- <div class="modal-header text-center">
+        <div class="d-lg-flex flex-lg-row flex-lg-wrap col-lg-12">
+          <div class="col-lg-11 text-center">
+            <h2 class="modal-title font-weight-bold clr-org" id="exampleModalLongTitle">
+              Get in touch
+            </h2>
+          </div>
+          <div class="col-lg-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="clr-org">&times;</span>
+            </button>
+          </div>
         </div>
+      </div> -->
+      <div class="modal-body p-0">
+        <section class=" form-section" id="form-section">
+          <div class="container p-0">
+            <div class="col-lg-12 mx-auto text-center d-lg-flex flex-lg-row flex-lg-wrap p-0 ">
+              <div class="bg-dark  col-lg-12 p-0 ">
+                <div class="contact-icons col-lg-12 d-lg-flex flex-lg-row flex-lg-wrap py-2">
+                  <div class="col-lg-6 ">
+                    <span class="clr-org icon-1"><i class="fa fa-circle"></i></span>
+                    <span class="clr-org icon-2"><i class="fa fa-circle"></i></span>
+                    <span class="clr-org icon-3"><i class="fa fa-circle"></i></span>
+                  </div>
+                  <div class="col-lg-6 text-right">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="clr-org">&times;</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-12 d-lg-flex flex-lg-row flex-lg-wrap p-0 py-5">
+                  <div class="col-lg-6 pb-4 text-left pl-5">
+                    <div>
+                      <h2 class=" clr-org">Contact<br><span class="us">Us</span> </h2>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-6 text-center mx-auto mt-5 mt-lg-0 pb-5 pb-lg-0">
+                    <grammarly-extension data-grammarly-shadow-root="true" class="cGcvT"
+                      style="position: absolute; top: 0px; left: 0px; pointer-events: none;">
+                    </grammarly-extension>
+
+                    <form class="contact-form ">
+                      <div class="form-row">
+                        <div class="col-md-12 form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Name" required="">
+                          <div class="validate"></div>
+                        </div>
+                        <div class="col-md-12 form-group">
+                          <input type="email" class="form-control" name="email" placeholder="E-mail" required="">
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="mobile" placeholder="Mobile Number" required="">
+                        <div class="validate"></div>
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control " name="message" placeholder="Your Message"
+                          style="height:100px;" required="" spellcheck="false"></textarea>
+                        <div class="validate"></div>
+                      </div>
+                      <div class="mb-3">
+                        <div id="responseMessage"></div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-12 d-lg-flex flex-lg-wrap flex-lg-row pt-2">
+                    <div class="col-md-6 cn-info text-left ">
+                      <p>CONTACT INFO : <a href="tel:+91 7995766421" class="">+91
+                          7995766421</a></p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <span><button class="clr-org border-0 bg-dark font-weight-bold">CANCLE</button></span>
+                      <span><button class="clr-org border-0 bg-dark font-weight-bold">SEND</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="border-0 clr-org font-weight-bold" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary clr-org font-weight-bold">Save
+          changes</button>
+      </div> -->
     </div>
+  </div>
+</div>
 </body>
 
 </html>
