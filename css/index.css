@@ -655,57 +655,6 @@ footer .footer-text {
   font-weight: 600;
 }
 
-@media (min-width:992px) {
-  .text-on-image {
-    position   : absolute;
-    width      : 100%;
-    height     : 100%;
-    top        : 0;
-    left       : 0;
-    padding-top: 70px;
-  }
-
-  .h1-style {
-    font-size  : 50px;
-    font-weight: 700;
-  }
-
-  /* .four-box-col-24 {
-    width     : 23%;
-    max-width : 23%;
-    height    : 364px;
-    max-height: 364px;
-    margin-bottom: 0px;
-  } */
-  .ai-four-img img {
-    border-radius   : 7px;
-    /* width        : 242px;
-    max-width       : 242px; */
-    height          : 127px;
-    max-height      : 127px;
-  }
-
-  .ai-col {
-    padding         : 7px;
-    /* width        : 24%;
-    max-width       : 24%;
-    height          : 300px;
-    max-height      : 300px; */
-    border          : 2px solid #eae9e8;
-    border-radius   : 8px;
-    background      : white;
-  }
-
-  .getintouch {
-    margin-left: 100px;
-  }
-
-  .bannerr-carousell .owl-dots {
-    position: absolute;
-    bottom  : 0;
-    left    : 50%;
-  }
-}
 
 .fa-quote-left {
   font-size  : 28px;
@@ -835,9 +784,6 @@ p.identity {
   border: none;
 }
 
-.modal-dialog {
-  max-width: 70% !important;
-}
 
 .modal-dialog-centered .modal-content {
   background: black;
@@ -1058,4 +1004,97 @@ p.identity {
   width        : 100%;
   height       : 100%;
   border-radius: 8px;
+}
+
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+}
+#return-to-top i {
+  color: #fe4902;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: white;
+  top: 5px;
+}
+
+
+@media (min-width:992px) {
+  .text-on-image {
+    position   : absolute;
+    width      : 100%;
+    height     : 100%;
+    top        : 0;
+    left       : 0;
+    padding-top: 70px;
+  }
+
+  .modal-dialog {
+    max-width: 70% !important;
+  }
+
+  .h1-style {
+    font-size  : 50px;
+    font-weight: 700;
+  }
+
+  /* .four-box-col-24 {
+    width     : 23%;
+    max-width : 23%;
+    height    : 364px;
+    max-height: 364px;
+    margin-bottom: 0px;
+  } */
+  .ai-four-img img {
+    border-radius   : 7px;
+    /* width        : 242px;
+    max-width       : 242px; */
+    height          : 127px;
+    max-height      : 127px;
+  }
+
+  .ai-col {
+    padding         : 7px;
+    /* width        : 24%;
+    max-width       : 24%;
+    height          : 300px;
+    max-height      : 300px; */
+    border          : 2px solid #eae9e8;
+    border-radius   : 8px;
+    background      : white;
+  }
+
+  .getintouch {
+    margin-left: 100px;
+  }
+
+  .bannerr-carousell .owl-dots {
+    position: absolute;
+    bottom  : 0;
+    left    : 50%;
+  }
+}
+
+@media (min-width:658px) {
+  .modal-dialog {
+    width: 100%;
+  }
 }
