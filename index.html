@@ -9,18 +9,20 @@
   <link rel="stylesheet" href="css/owlcarousel_styles/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owlcarousel_styles/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/owlcarousel_js/owl.carousel.min.js"></script>
   <script src="js/owlcarousel_js/main.js"></script>
 </head>
 
 <body>
   <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
-  <section class="menu-section ">
+  <section class="menu-section nav-menu">
     <div class="container-fluid p-0">
       <nav class="navbar py-0 navbar-expand-lg bg-light navbar-light py-3">
         <a class="navbar-brand" href="#">
@@ -32,13 +34,14 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto d-lg-flex flex-lg-row flex-lg-wrap align-items-lg-center ">
             <li class="nav-item px-3">
-              <a class="nav-link font-size-14" href="index.html">Home</a>
+              <a class="nav-link font-size-14" aria-controls="nav-home" aria-selected="true" href="index.html">Home</a>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link font-size-14" href="about.html">About Us</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link font-size-14" href="services.html">Services</a>
+              <a class="nav-link font-size-14" aria-controls="nav-services" aria-selected="false"
+                href="services.html">Services</a>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link font-size-14" href="contact.html">Contact Us</a>
@@ -53,8 +56,7 @@
             <li class="nav-item getintouch m-0">
               <a class="nav-link color-blue text-underline" href="#form-section"><i class="fa fa-paper-plane"
                   aria-hidden="true"></i>
-                <button type="button" class="color-blue border-0" style="background: #f8f9fa;" data-toggle="modal"
-                  data-target="#exampleModalCenter">
+                <button type="button" class="color-blue border-0" data-toggle="modal" data-target="#myModal1">
                   Get In Touch
                 </button></a>
             </li>
@@ -66,8 +68,8 @@
                 <form role="search" method="get" class="search-form" action="sitename.com/">
                   <label>
                     <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                    <button class="search-submit border-0" type="submit"><i class="fa fa-search"></i></button>
                   </label>
-                  <input type="submit" class="search-submit" value="Search">
                 </form>
               </div>
             </div>
@@ -90,15 +92,16 @@
               <div class="col-12">
                 <div
                   class="col-8 button-div pl-3 mr-0 pr-0 color-white d-flex flex-row flex-wrap justify-content-start align-items-start">
-                  <a href="#" class="btn btn-primary bg-dark-light px-4 font-sm-8 font-md-16">Check it out <i
-                      class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  <a href="about.html#bound" class="btn btn-primary bg-dark-light px-4 font-sm-8 font-md-16">Check it
+                    out <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="col-4 play-button-holder pl-3 font-color-black">
-                    <button type="button" class="color-blue border-0" style="background: none;" data-toggle="modal"
-                      data-target="#exampleModalCenter">
-                      <a href="https://youtu.be/mEquLNr_2_M"
+                    <!-- Button trigger modal -->
+                    <button type="button" class="border-0  text-center" style="background: none;" data-toggle="modal"
+                      data-target="#exampleModalCenter" id="signin-2">
+                      <a href="#"
                         class="play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
-                          class="fa fa-play" aria-hidden="true"></i></a>
-                    </button>Play video
+                          class="fa fa-play" aria-hidden="true"></i></a>Play video
+                    </button>
                   </div>
                 </div>
               </div>
@@ -113,12 +116,16 @@
               </div>
               <div
                 class="col-lg-9 button-div pl-3 mr-0 pr-0 color-white d-lg-flex flex-lg-row flex-lg-wrap justify-content-start align-items-start">
-                <a href="#" class="btn btn-primary bg-dark-light px-4 font-sm-8 font-md-16">Check it out <i
-                    class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                <a href="about.html#bound" class="btn btn-primary bg-dark-light px-4 font-sm-8 font-md-16">Check it out
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 <div class="col-lg-3 play-button-holder pl-3">
-                  <a href="https://youtu.be/mEquLNr_2_M"
-                    class="play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
-                      class="fa fa-play" aria-hidden="true"></i></a>Play video
+                  <!-- Button trigger modal -->
+                  <button type="button" class="border-0  text-white text-center" style="background: none;"
+                    data-toggle="modal" data-target="#exampleModalCenter" id="signin">
+                    <a href="#"
+                      class="play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
+                        class="fa fa-play" aria-hidden="true"></i></a>Play video
+                  </button>
                 </div>
               </div>
             </div>
@@ -132,12 +139,16 @@
               </div>
               <div
                 class="col-lg-9 button-div pl-3 mr-0 pr-0 color-white d-lg-flex flex-lg-row flex-lg-wrap justify-content-start align-items-start">
-                <a href="#" class="btn btn-primary bg-dark-light px-4 font-sm-8 font-md-16">Check it out <i
-                    class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                <a href="about.html#bound" class="btn btn-primary bg-dark-light px-4 font-sm-8 font-md-16">Check it out
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 <div class="col-lg-3 play-button-holder pl-3">
-                  <a href="https://youtu.be/mEquLNr_2_M"
-                    class="play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
-                      class="fa fa-play" aria-hidden="true"></i></a>Play video
+                  <!-- Button trigger modal -->
+                  <button type="button" class="border-0 text-white text-center" style="background: none;"
+                    data-toggle="modal" data-target="#exampleModalCenter" id="signin">
+                    <a href="#"
+                      class="play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
+                        class="fa fa-play" aria-hidden="true"></i></a>Play video
+                  </button>
                 </div>
               </div>
             </div>
@@ -146,7 +157,7 @@
       </div>
     </div>
   </section>
-  <section class="digital-section py-5">
+  <section class="digital-section py-5" id="digital-section">
     <div class="container">
       <div class="col-lg-12 p-0">
         <nav class="d-lg-flex flex-row flex-wrap justify-content-center border-0">
@@ -178,7 +189,7 @@
                     </p>
                   </div>
                   <div class="four-box-learn pt-2">
-                    <a href="#">Learn more</a>
+                    <a href="#news-section">Learn more</a>
                     <i class="fa fa-long-arrow-right pl-2"></i>
                   </div>
                 </div>
@@ -559,7 +570,7 @@
         </div>
       </div>
   </section>
-  <section class="news-section py-5">
+  <section class="news-section py-5" id="news-section">
     <div class="container">
       <div class="col-lg-12 p-0 pt-3">
         <div class="news-heading">
@@ -567,7 +578,8 @@
         </div>
         <div class="ai-border mt-4"></div>
         <div class="col-lg-12 d-lg-flex flex-row flex-wrap  p-0">
-          <div class="col-lg-3 p-0 news-container mt-4 p-3">
+          <div class="col-lg-4 p-0 news-container mt-4 p-3 code--left aos-init aos-animate" data-aos-delay="1000"
+            data-aos="fade-right">
             <p class="news font-weight-bold">LATEST NEWS</p>
             <div class="news-boxs bg-white col-12">
               <p class="news-date pt-2">
@@ -618,30 +630,34 @@
               <button>View All <i class="fa fa-angle-right pl-2 font-weight-bold"></i></button>
             </div>
           </div>
-          <div class=" col-lg-9 mt-4 p-0">
-            <div class="events col-lg-12 ml-lg-2 p-3">
+          <div class=" col-lg-8 mt-4 p-0">
+            <div class="events col-lg-12 ml-lg-2 p-3 code--right aos-init aos-animate" data-aos-delay="1000"
+              data-aos="fade-left">
               <p class="news font-weight-bold">EVENTS</p>
-              <div class=" bg-white col-lg-12 d-lg-flex flex-lg-row flex-lg-wrap p-0">
-                <div class="col-lg-4 p-2 event-img">
-                  <img src="images/paris.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-8 ">
-                  <p class="event-date pt-2">
-                    26 Sep 2019
-                  </p>
-                  <div class="event-heading">
-                    <h6>Efma innovation summit 2019</h6>
+              <a href="#digital-section" style="text-decoration: none;">
+                <div class=" bg-white col-lg-12 d-lg-flex flex-lg-row flex-lg-wrap p-0">
+                  <div class="col-lg-4 p-2 event-img">
+                    <img src="images/paris.jpg" class="img-fluid" alt="">
                   </div>
-                  <div class="event-content">
-                    <p class="m-0 pb-2">While innovation has always been a priority for retail<br>
-                      financial services crganisationts, today - with the dawan of open banking and the rise of new pla
+                  <div class="col-lg-8 ">
+                    <p class="event-date pt-2">
+                      26 Sep 2019
                     </p>
-                  </div>
-                  <div class="map-container pb-1">
-                    <p><i class="fa fa-map-marker pr-2"></i> Paris, France</p>
+                    <div class="event-heading">
+                      <h6>Efma innovation summit 2019</h6>
+                    </div>
+                    <div class="event-content">
+                      <p class="m-0 pb-2">While innovation has always been a priority for retail<br>
+                        financial services crganisationts, today - with the dawan of open banking and the rise of new
+                        pla
+                      </p>
+                    </div>
+                    <div class="map-container pb-1">
+                      <p><i class="fa fa-map-marker pr-2"></i> Paris, France</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
               <div class=" bg-white col-lg-12 d-lg-flex flex-lg-row flex-lg-wrap p-0 mt-3">
                 <div class="col-lg-4 p-2 event-img">
                   <img src="images/londo.jpg" class="img-fluid" alt="">
@@ -706,9 +722,13 @@
               <img src="images/man-working.jpg" class="img-fluid" alt="">
             </div>
             <div class="client-video-button">
-              <a href="https://youtu.be/mEquLNr_2_M"
-                class="client-play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
-                  class="fa fa-play" aria-hidden="true"></i></a>
+              <!-- Button trigger modal -->
+              <button type="button" class="border-0  text-center" style="background: none;" data-toggle="modal"
+                data-target="#exampleModalCenter" id="signin-3">
+                <a href="#"
+                  class="client-play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
+                    class="fa fa-play" aria-hidden="true"></i></a>
+              </button>
             </div>
             <div class="client-content">
               <p class="m-0 pt-2">curtin University uses AssistEdge to drive efficiency and to create greater
@@ -898,27 +918,13 @@
       </div>
     </div>
   </footer>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  <!-- Modal-1 -->
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content p-0">
-        <!-- <div class="modal-header text-center">
-          <div class="d-lg-flex flex-lg-row flex-lg-wrap col-lg-12">
-            <div class="col-lg-11 text-center">
-              <h2 class="modal-title font-weight-bold clr-org" id="exampleModalLongTitle">
-                Get in touch
-              </h2>
-            </div>
-            <div class="col-lg-1">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" class="clr-org">&times;</span>
-              </button>
-            </div>
-          </div>
-        </div> -->
         <div class="modal-body p-0">
-          <section class=" form-section" id="form-section">
+          <section class=" form-section">
             <div class="container p-0">
               <div class="col-lg-12 mx-auto text-center d-lg-flex flex-lg-row flex-lg-wrap p-0 ">
                 <div class="bg-dark  col-lg-12 p-0 ">
@@ -946,28 +952,37 @@
                         style="position: absolute; top: 0px; left: 0px; pointer-events: none;">
                       </grammarly-extension>
 
-                      <form class="contact-form" id="register-form" name="registration">
+                      <form class="contact-form">
                         <div class="form-row">
-                          <div class="col-md-12 form-group">
-                            <input type="text" class="form-control" id="firstname" name="name" placeholder="Name">
-                            <div class="validate"></div>
+                          <div class="col-md-12 form-group text-left">
+
+                            <input type="text" class="form-control required" name="name" placeholder="Name"><span
+                              class="text-danger spn"><small class=" "></small></span>
                           </div>
-                          <div class="col-md-12 form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
-                            <div class="validate"></div>
+                          <div class="col-md-12 form-group text-left">
+
+                            <input type="email" class="form-control required" name="email" placeholder="E-mail">
+                            <span class="text-danger spn"><small class=""></small></span>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number">
-                          <div class="validate"></div>
+                        <div class="form-group text-left">
+
+                          <input type="text" class="form-control required" name="mobile" placeholder="Mobile Number">
+                          <span class="text-danger spn"><small class=""></small></span>
                         </div>
-                        <div class="form-group">
-                          <textarea class="form-control" id="message" name="message" placeholder="Your Message"
-                            style="height:100px;" spellcheck="false"></textarea>
-                          <div class="validate"></div>
+                        <div class="form-group text-left">
+                          <textarea class="form-control required" name="message" placeholder="Your Message"
+                            style="height:100px;" pattern="[A-Za-z]{100}" title=" Your Message"
+                            spellcheck="false"></textarea>
+                          <span class="text-danger spn"><small class=""></small></span>
                         </div>
-                        <div class="mb-3">
-                          <div id="responseMessage"></div>
+                        <!-- <div class="mb-3">
+                            <div id="responseMessage"></div>
+                        </div> -->
+                        <div class="text-right pt-5">
+                          <span><button class="clr-org border-0 bg-dark font-weight-bold">CANCLE</button></span>
+                          <button class="clr-org border-0 bg-dark font-weight-bold" type="submit" name="submit"
+                            id="submit">SEND</button>
                         </div>
                       </form>
                     </div>
@@ -976,29 +991,66 @@
                         <p>CONTACT INFO : <a href="tel:+91 7995766421" class="">+91
                             7995766421</a></p>
                       </div>
-                      <div class="col-md-6 text-right">
+                      <!-- <div class="col-md-6 text-right">
                         <span><button class="clr-org border-0 bg-dark font-weight-bold">CANCLE</button></span>
-                        <span><input class="clr-org border-0 bg-dark font-weight-bold" name="submit">SEND</input></span>
-                      </div>
+                        <span><button class="clr-org border-0 bg-dark font-weight-bold"
+                            type="submit">SEND</button></span>
+                      </div> -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <div class="modal-content">
-            <div class="modal-body">
-              <a href="https://youtu.be/mEquLNr_2_M"
-                class="play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
-                  class="fa fa-play" aria-hidden="true"></i></a>
-            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal2 -->
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12 play-button-holder pl-3 font-color-black">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/caLEe9ufQXQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="border-0 clr-org font-weight-bold" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-secondary clr-org font-weight-bold">Save
-            changes</button>
-        </div> -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal3 -->
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12 play-button-holder pl-3 font-color-black">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/caLEe9ufQXQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
@@ -1007,12 +1059,18 @@
       $('bdr-ornge').click(function () {
         $('bdr-ornge').css('border-bottom', 'solid 3px #fe4902')
       });
-      $('.modal-button').on('click', function () {
-        var video_btn = $(this).closest('.menu-section').find('.getintouch').find('a');
-        $('.play-button').text(video_btn);
-        var getintouch = $(this).closest(".getintouch").find("a")
-      });
+
+      // $('#get-btn').on('click', function () {
+      //   var getintouch = $(this).closest(".form-section").find(".form-container").text()
+      //   $('.form-box').text(getintouch);
+      // });
+      // $('#viedo-btn').on('click', function () {
+      //   var video_btn = $(this).closest('.menu-section').find('.getintouch').find('a');
+      //   $('.play-button').text(video_btn);
+      // });
     });
+
+    AOS.init();
   </script>
 </body>
 

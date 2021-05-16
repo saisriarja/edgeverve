@@ -794,38 +794,43 @@
         </div>
     </section>
 
-    <div class="head-search skewed-search">
-        <div class="search-wrap">
-            <form class="search-form" action="https://www.homeclearance.com.au" method="get">
-                <input class="search-input" type="text" name="s" placeholder="Find the best brands at lowest prices"
-                    autocomplete="off">
-                <input type="hidden" value="" id="shipping_state_selected">
-                <button class="btn-simple btn-brd" type="submit"><span class="value">Shop Now</span><i
-                        class="fa fa-search"></i></button>
-                <ul class="search-result"></ul>
-            </form>
-        </div>
-    </div>
-    <div class="header-search-wrapper">
-        <span class="search-main">
-            <i class="fa fa-search"></i>
-        </span>
-        <div class="search-form-main clearfix ">
-            <form role="search" method="get" class="search-form" action="sitename.com/">
-                <label>
-                    <input type="search" class="search-field w-100" placeholder="Search …" value="" name="s">
-                </label>
-            </form>
-        </div>
-    </div>
 
     
-
+   
+    <form action="somefile.php">
+        <input type="text" name="username" placeholder="Username" pattern="[a-z]{1,15}"
+            title="Username should only contain lowercase letters. e.g. john">
+        <input type="submit">
+    </form>
     <script>
-        $('.header-search-wrapper .search-main').click(function () {
-            $('.search-form-main').toggleClass('active-search');
-            $('.search-form-main .search-field').focus();
+        $(document).ready(function () {
+            $('.header-search-wrapper .search-main').click(function () {
+                $('.search-form-main').toggleClass('active-search');
+                $('.search-form-main .search-field').focus();
+            });
+            $('.container-modal .title').each(function (idx, item) {
+                var winnerId = "winner-" + idx;
+                this.id = winnerId;
+                $(this).click(function () {
+                    var btn = $("#winner-" + idx);
+                    var span = $(".close");
+                    var popId = $('#win-' + idx);
+                    btn.click(function () {
+                        $(popId).addClass('on');
+                        $('body').addClass('lorem');
+                    });
+                    span.click(function () {
+                        $(popId).removeClass('on');
+                        $('body').removeClass('lorem');
+                    });
+
+
+
+                });
+            });
         });
+
+
     </script>
 </body>
 

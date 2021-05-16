@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="css/owlcarousel_styles/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owlcarousel_styles/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/owlcarousel_js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/owlcarousel_js/main.js"></script>
 </head>
 
 <body>
     <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
-    <section class="menu-section ">
+    <section class="menu-section nav-menu">
         <div class="container-fluid p-0">
             <nav class="navbar py-0 navbar-expand-lg bg-light navbar-light py-3">
                 <a class="navbar-brand" href="#">
@@ -38,7 +40,8 @@
                             <a class="nav-link font-size-14" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link font-size-14" href="services.html">Services</a>
+                            <a class="nav-link font-size-14" aria-controls="nav-about" aria-selected="true"
+                                href="services.html">Services</a>
                         </li>
                         <li class="nav-item px-3">
                             <a class="nav-link font-size-14" href="contact.html">Contact Us</a>
@@ -143,7 +146,7 @@
                 <div class="our-services-boxs col-lg-12 pt-5 p-0">
                     <div class="col-lg-12 d-lg-flex flex-lg-wrap flex-lg-row p-0">
                         <div class="col-lg-4 mb-lg-0 mb-4 p-0 px-lg-3">
-                            <div class=" bg col-lg-12 text-center">
+                            <div class=" bg col-lg-12 text-center code--left aos-init"  data-aos="zoom-in-down" data-aos-delay="100">
                                 <div class="our-icon">
                                     <i class="fa fa-dollar py-3 mt-0 clr-org"></i>
                                 </div>
@@ -157,7 +160,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 mb-4 mb-lg-0 p-0 px-lg-3">
-                            <div class=" bg col-lg-12 text-center">
+                            <div class=" bg col-lg-12 text-center  code--left aos-init"  data-aos="zoom-in-down" data-aos-delay="100">
                                 <div class="our-icon">
                                     <i class="fa fa-building py-3 mt-0 clr-org"></i>
                                 </div>
@@ -171,7 +174,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 mb-lg-0 mb-4 p-0 px-lg-3">
-                            <div class=" bg col-lg-12 text-center">
+                            <div class=" bg col-lg-12 text-center  code--left aos-init"  data-aos="zoom-in-down" data-aos-delay="100">
                                 <div class="our-icon">
                                     <i class="fa fa-line-chart  py-3 mt-0 clr-org"></i>
                                 </div>
@@ -187,7 +190,7 @@
                     </div>
                     <div class="col-lg-12 d-lg-flex flex-lg-wrap flex-lg-row  mt-4 p-0">
                         <div class="col-lg-4 mb-4 mb-lg-0 p-0 px-lg-3">
-                            <div class=" bg col-lg-12 text-center">
+                            <div class=" bg col-lg-12 text-center  code--left aos-init"  data-aos="zoom-in-down" data-aos-delay="100">
                                 <div class="our-icon">
                                     <i class="fa fa-laptop py-3 mt-0 clr-org"></i>
                                 </div>
@@ -201,7 +204,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 mb-4 mb-lg-0 p-0 px-lg-3">
-                            <div class=" bg col-lg-12 text-center">
+                            <div class=" bg col-lg-12 text-center  code--left aos-init"  data-aos="zoom-in-down" data-aos-delay="100">
                                 <div class="our-icon">
                                     <i class="fa fa-money  py-3 mt-0 clr-org"></i>
                                 </div>
@@ -215,7 +218,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 mb-4 mb-lg-0 p-0 px-lg-3">
-                            <div class=" bg col-lg-12 text-center">
+                            <div class=" bg col-lg-12 text-center  code--left aos-init"  data-aos="zoom-in-down" data-aos-delay="300">
                                 <div class="our-icon">
                                     <i class="fa fa-credit-card  py-3 mt-0 clr-org"></i>
                                 </div>
@@ -371,32 +374,42 @@
                                                 style="position: absolute; top: 0px; left: 0px; pointer-events: none;">
                                             </grammarly-extension>
 
-                                            <form class="contact-form ">
+                                            <form class="contact-form">
                                                 <div class="form-row">
-                                                    <div class="col-md-12 form-group">
-                                                        <input type="text" class="form-control" name="name"
-                                                            placeholder="Name" required="">
-                                                        <div class="validate"></div>
+                                                    <div class="col-md-12 form-group text-left">
+
+                                                        <input type="text" class="form-control required" name="name"
+                                                            placeholder="Name"><span class="text-danger spn"><small
+                                                                class=" "></small></span>
                                                     </div>
-                                                    <div class="col-md-12 form-group">
-                                                        <input type="email" class="form-control" name="email"
-                                                            placeholder="E-mail" required="">
-                                                        <div class="validate"></div>
+                                                    <div class="col-md-12 form-group text-left">
+
+                                                        <input type="email" class="form-control required" name="email"
+                                                            placeholder="E-mail">
+                                                        <span class="text-danger spn"><small class=""></small></span>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="mobile"
-                                                        placeholder="Mobile Number" required="">
-                                                    <div class="validate"></div>
+                                                <div class="form-group text-left">
+
+                                                    <input type="text" class="form-control required" name="mobile"
+                                                        placeholder="Mobile Number">
+                                                    <span class="text-danger spn"><small class=""></small></span>
                                                 </div>
-                                                <div class="form-group">
-                                                    <textarea class="form-control " name="message"
-                                                        placeholder="Your Message" style="height:100px;" required=""
+                                                <div class="form-group text-left">
+                                                    <textarea class="form-control required" name="message"
+                                                        placeholder="Your Message" style="height:100px;"
+                                                        pattern="[A-Za-z]{100}" title=" Your Message"
                                                         spellcheck="false"></textarea>
-                                                    <div class="validate"></div>
+                                                    <span class="text-danger spn"><small class=""></small></span>
                                                 </div>
-                                                <div class="mb-3">
+                                                <!-- <div class="mb-3">
                                                     <div id="responseMessage"></div>
+                                                </div> -->
+                                                <div class="text-right pt-5">
+                                                    <span><button
+                                                            class="clr-org border-0 bg-dark font-weight-bold">CANCLE</button></span>
+                                                    <button class="clr-org border-0 bg-dark font-weight-bold"
+                                                        type="submit" name="submit" id="submit">SEND</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -405,12 +418,7 @@
                                                 <p>CONTACT INFO : <a href="tel:+91 7995766421" class="">+91
                                                         7995766421</a></p>
                                             </div>
-                                            <div class="col-md-6 text-right">
-                                                <span><button
-                                                        class="clr-org border-0 bg-dark font-weight-bold">CANCLE</button></span>
-                                                <span><button
-                                                        class="clr-org border-0 bg-dark font-weight-bold">SEND</button></span>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -426,6 +434,9 @@
             </div>
         </div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

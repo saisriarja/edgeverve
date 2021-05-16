@@ -1,7 +1,22 @@
-search-css
-video-popup
-form-validation
-top-arrow-button:- dun
+1) search-css-dun-padding-botton -remove-dun
+
+2) video-popup-2-dun
+
+3) form-validation-popup:-dun
+
+4) sticky-nav:- dun
+
+5) nav-boder-on-tab:- dun
+
+6) banner-arrows-dun
+
+7) check-it-out on click-go-to about us-pige-secion:- dun
+
+8) aos-animaion-dun-for  services-section
+
+9) digitel-section-learn-more-go -to new-events-dun
+
+10) on click events-first-content-go-to-digital-section-dun
 
 
 
