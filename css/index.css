@@ -727,9 +727,9 @@ p.identity {
   background-size: cover;
 }
 
-.form-section {
+/* .form-section {
   background: #bb4719;
-}
+} */
 
 .contact-icons {
   background   : #4d4d4f;
@@ -935,6 +935,10 @@ p.identity {
   border-radius      : 50%;
 }
 
+.team-section .our-team .social li a:hover {
+  color: white;
+}
+
 .our-team:hover .content,
 .our-team.active .content {
   opacity  : 1;
@@ -955,6 +959,7 @@ p.identity {
 
 
 #return-to-top {
+  z-index        : 999;
   position       : fixed;
   bottom         : 20px;
   right          : 20px;
@@ -1126,24 +1131,40 @@ p.identity {
 
 
 /* owl-carousel */
-.bannerr-carousell .owl-prev, .owl-next{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+.bannerr-carousell .owl-prev,
+.bannerr-carousell .owl-next {
+  position     : absolute;
+  top          : 50%;
+  transform    : translateY(-50%);
+  width        : 48px;
+  height       : 48px;
   border-radius: 50px !important;
-  background: #f4f4f4 !important;
-  
+  background   : #f4f4f4 !important;
+
 }
-.bannerr-carousell .owl-prev img, .bannerr-carousell .owl-next img{
-  width: 22px;
+
+.bannerr-carousell .owl-prev img,
+.bannerr-carousell .owl-next img {
+  width : 22px;
   height: 22px;
 }
-.bannerr-carousell .owl-prev{
+
+.bannerr-carousell .owl-prev {
   left: 0;
 }
-.bannerr-carousell .owl-next{
+
+.bannerr-carousell .owl-next {
   right: 0;
 }
 
+.about-number-section .icon i {
+  font-size     : 27px;
+  padding-bottom: 13px;
+}
+
+.box-sw:hover {
+  box-shadow: 0px 0px 19px 6px #eae9e8;
+}
+.box-pr {
+  box-shadow: 0px 0px 19px 6px #eae9e8;
+}

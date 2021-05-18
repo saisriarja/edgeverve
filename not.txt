@@ -18,6 +18,53 @@
 
 10) on click events-first-content-go-to-digital-section-dun
 
+11) play video-dun
+
+12) view all padding mobile-dun
+
+13) footer
+
+14) top arrow - z-index
+
+15) ipad  digital 
+
+16) about - icons - dun
+
+17) about - button-dun
+
+18) icons-hover- white-dun
+
+19) about-owl -dun
+
+20) about -2-dun
+
+21) services-show -hover
+
+22) contact -poup
+
+23) services- img
+
+24) get-in -close
+
+25) padding-owl-dun
+
+26) alien-owl
+
+27) services-boxs-ipad-2
+
+28) map-full-dun
+
+29) contact-bg-white-dun
+
+30) email-text-white-dun
+
+31) contact-map-all-devise
+
+32) contact-mobie-side
+
+33) product-box-show-dun
+
+34) banner-owl-text
 
 
   

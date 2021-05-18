@@ -18,6 +18,22 @@ $(document).ready(function () {
       }
     }
   });
+  $('.team-carousell').owlCarousel({
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2,
+        nav: true
+      },
+      1000: {
+        items: 3,
+        nav:true
+      }
+    }
+  });
   $('.counter').each(function () {
     var $this = $(this),
       countTo = $this.attr('data-count');
