@@ -6,7 +6,8 @@ $(document).ready(function () {
     navText: ['<img src="images/left-arrow.png" alt="">', '<img src="images/right-arrow.png" alt="">'],
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        nav:false,
       },
       600: {
         items: 1,
@@ -25,12 +26,10 @@ $(document).ready(function () {
         items: 1
       },
       600: {
-        items: 2,
-        nav: true
+        items: 2
       },
       1000: {
-        items: 3,
-        nav:true
+        items: 3
       }
     }
   });

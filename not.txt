@@ -1,26 +1,29 @@
-1) search-css-dun-padding-botton -remove-dun
+1) search-css-done-padding-botton -remove-done
 
-2) video-popup-2-dun
+2) video-popup-2-done
 
-3) form-validation-popup:-dun
+3) form-validation-popup:-done
 
-4) sticky-nav:- dun
+4) sticky-nav:- done
 
-5) nav-boder-on-tab:- dun
+5) nav-boder-on-tab:- done
 
-6) banner-arrows-dun
+6) banner-arrows-done
 
-7) check-it-out on click-go-to about us-pige-secion:- dun
+7) check-it-out on click-go-to about us-pige-secion:- done
 
-8) aos-animaion-dun-for  services-section
+8) aos-animaion-done-for  services-section
 
-9) digitel-section-learn-more-go -to new-events-dun
+9) digitel-section-learn-more-go -to new-events-done
 
-10) on click events-first-content-go-to-digital-section-dun
+10) on click events-first-content-go-to-digital-section-done
 
-11) play video-dun
 
-12) view all padding mobile-dun
+
+
+11) play video-done
+
+12) view all padding mobile-done
 
 13) footer
 
@@ -28,15 +31,15 @@
 
 15) ipad  digital 
 
-16) about - icons - dun
+16) about - icons - done
 
-17) about - button-dun
+17) about - button-done
 
-18) icons-hover- white-dun
+18) icons-hover- white-done
 
-19) about-owl -dun
+19) about-owl -done
 
-20) about -2-dun
+20) about -2-done
 
 21) services-show -hover
 
@@ -46,25 +49,31 @@
 
 24) get-in -close
 
-25) padding-owl-dun
+25) padding-owl-done
 
 26) alien-owl
 
 27) services-boxs-ipad-2
 
-28) map-full-dun
+28) map-full-done
 
-29) contact-bg-white-dun
+29) contact-bg-white-done
 
-30) email-text-white-dun
+30) email-text-white-done
 
 31) contact-map-all-devise
 
 32) contact-mobie-side
 
-33) product-box-show-dun
+33) product-box-show-done
 
 34) banner-owl-text
+
+35) chick-hight
+36) footer-logo-padding-bottom
+1280 scrolling
+
+
 
 
   
