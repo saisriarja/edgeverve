@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owlcarousel_styles/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/just.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -19,6 +20,32 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <div class="col-12 d-flex flex-row flex-wrap justify-content-between p-0">
+                <!-- <div class="col-lg-12 col-9 p-3">
+                    <img src="images/logo-sea.png" alt="">
+                </div> -->
+                <nav class="col-lg-10 col-3 p-0">
+                    <div class="button  d-block d-lg-none p-0">
+                        <a class="btn-open" href="#"></a>
+                    </div>
+                </nav>
+                <div class="overlay col-12 col-lg-0 p-0">
+                    <div class="wrap p-0">
+                        <ul class="wrap-nav ">
+                            <li class=""><a href="#">About</a>
+                            </li>
+                            <li class=""><a href="#">Services</a>
+                            </li>
+                            <li class=""><a href="#">Work</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="digital-section py-5">
         <div class="container">
             <div class="col-lg-12">
@@ -795,13 +822,14 @@
     </section>
 
 
-    
-   
+
+
     <form action="somefile.php">
         <input type="text" name="username" placeholder="Username" pattern="[a-z]{1,15}"
             title="Username should only contain lowercase letters. e.g. john">
         <input type="submit">
     </form>
+    <script src="js/jquery.min.js" ></script>
     <script>
         $(document).ready(function () {
             $('.header-search-wrapper .search-main').click(function () {
@@ -823,10 +851,27 @@
                         $(popId).removeClass('on');
                         $('body').removeClass('lorem');
                     });
-
-
-
                 });
+            });
+            $('#menu').bind('click', function () {
+                $('#mainnav ul').slideToggle();
+            });
+
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 768) {
+                    $('#mainnav ul').removeAttr('style');
+                }
+            });
+
+            $(".button a").click(function () {
+                $(".overlay").fadeToggle();
+                $(this).toggleClass('btn-open btn-close');
+            });
+            $('.overlay').on('click', function () {
+                $(".overlay").fadeToggle();
+                $(".button a").toggleClass('btn-open btn-close');
+                open = false;
             });
         });
 
