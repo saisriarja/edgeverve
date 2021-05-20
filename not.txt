@@ -27,9 +27,9 @@
 
 13) footer
 
-14) top arrow - z-index
+14) top arrow - z-index-done
 
-15) ipad  digital 
+15) ipad-digital-done
 
 16) about - icons - done
 
@@ -41,19 +41,19 @@
 
 20) about -2-done
 
-21) services-show -hover
+21) services-shadow-hover-done
 
-22) contact -poup
+22) contact-poup
 
-23) services- img
+23) services- img-done
 
-24) get-in -close
+24) get-in -close-done
 
 25) padding-owl-done
 
-26) alien-owl
+26) alien-owl-done
 
-27) services-boxs-ipad-2
+27) services-boxs-ipad-2-done
 
 28) map-full-done
 
@@ -61,16 +61,18 @@
 
 30) email-text-white-done
 
-31) contact-map-all-devise
+31) contact-map-all-devise-done
 
-32) contact-mobie-side
+32) contact-mobie-side-done
 
 33) product-box-show-done
 
-34) banner-owl-text
+34) banner-owl-text-done
 
-35) chick-hight
-36) footer-logo-padding-bottom
+35) chick-hight-done
+
+36) footer-logo-padding-bottom-done
+
 1280 scrolling
 
 

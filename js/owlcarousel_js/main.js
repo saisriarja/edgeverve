@@ -2,12 +2,12 @@ $(document).ready(function () {
   $('.bannerr-carousell').owlCarousel({
     // loop: true,
     nav: true,
-    smartSpeed:700,
+    smartSpeed: 700,
     navText: ['<img src="images/left-arrow.png" alt="">', '<img src="images/right-arrow.png" alt="">'],
     responsive: {
       0: {
         items: 1,
-        nav:false,
+        nav: false,
       },
       600: {
         items: 1,
@@ -15,7 +15,7 @@ $(document).ready(function () {
       },
       1000: {
         items: 1,
-        nav:true
+        nav: true
       }
     }
   });
@@ -29,7 +29,8 @@ $(document).ready(function () {
         items: 2
       },
       1000: {
-        items: 3
+        items: 3,
+        loop: false
       }
     }
   });

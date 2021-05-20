@@ -720,7 +720,7 @@ p.identity {
   position      : absolute;
   bottom        : 0;
   left          : 45% !important;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .awards-agileinfo {
@@ -1047,11 +1047,31 @@ p.identity {
     bottom  : 0;
     left    : 50%;
   }
+
+  .bannerr-carousell .owl-dots {
+    padding-bottom: 20px;
+  }
+
+  .padding-t {
+    padding-top: 19px;
+  }
+
+  .line-height {
+    line-height: 25px;
+  }
 }
 
-@media (min-width:658px) {
+@media (max-width:658px) {
   .modal-dialog {
     width: 100%;
+  }
+
+  .bannerr-carousell .owl-dots {
+    padding-bottom: 0;
+  }
+
+  .h1-style {
+    font-size: 18px !important;
   }
 }
 
@@ -1163,6 +1183,9 @@ p.identity {
   padding-bottom: 13px;
 }
 
+
+
+/* nav */
 .box-sw:hover {
   box-shadow: 0px 0px 19px 6px #eae9e8;
 }
@@ -1170,27 +1193,78 @@ p.identity {
 .box-pr {
   box-shadow: 0px 0px 19px 6px #eae9e8;
 }
-.navbar-toggler[aria-expanded="false"] i{
+
+
+.navbar-toggler[aria-expanded="true"] {
+  border: none;
+  content: "f00d";
+  font-family: Font Awesome;
+}
+
+.collapsed  span{
   display: none;
 }
 
-.navbar-toggler[aria-expanded="true"] i{
+/* .navbar-toggler[aria-expanded="false"] span {
   display: block;
-  font-size: 26px;
+} */
+.collapsed  i{
+  display: block;
 }
-.navbar-toggler[aria-expanded="true"]{
-  border: none;
-}
-.navbar-toggler[aria-expanded="true"] span{
+.collapsed span{
   display: none;
 }
-.navbar-toggler[aria-expanded="false"] span{
-  display: block;
-}
-.menu-section .navbar .show li{
+.menu-section .navbar .show li {
   text-align: center;
 }
-.menu-section .navbar .show li a{
-  display: inline ;
+
+.menu-section .navbar .show li a {
+  display      : inline;
   margin-bottom: 5px;
+  line-height  : 58px;
+  font-size    : 25px;
+}
+.menu-section .navbar .show .header-search-wrapper{
+  text-align: center;
+}
+.show {
+  /* height: 100vh; */
+  padding: 78px 0;
+}
+
+@media (max-width:768px) {
+  .padding-md {
+    padding   : 61px 35px !important;
+    margin-top: 18px;
+  }
+
+  .bannerr-carousell .owl-dots {
+    padding-bottom: 20px;
+  }
+
+  .line-height {
+    line-height: 30px !important;
+  }
+
+  .line-height-23 {
+    line-height: 23px;
+  }
+}
+
+@media (max-width:1024px) {
+  .padding-37 {
+    padding: 37px 35px !important;
+  }
+
+  .padding-40 {
+    padding: 40px 35px !important;
+  }
+
+  .padding-t {
+    padding-top: 0;
+  }
+
+  .line-height {
+    line-height: 20px;
+  }
 }
